@@ -9,7 +9,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " !! write plugins here !!
 
-"Plugin 'alvan/vim-closetag'
 Plugin 'thinca/vim-quickrun'
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdtree'
@@ -18,7 +17,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 't9md/vim-quickhl'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Yggdroot/indentLine'
-
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'reireias/vim-cheatsheet'
+Plugin 'suan/vim-instant-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -55,3 +58,9 @@ set cursorline
 set laststatus=2
 " メッセージ表示欄を２行確保
 set cmdheight=2
+
+let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
+
+"insert中にjjでescと同等の機能
+inoremap jj <Esc>
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
