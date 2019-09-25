@@ -1,6 +1,4 @@
-# rbenv
-set -x PATH $HOME/.rbenv/bin $PATH
-status --is-interactive; and source (rbenv init -|psub)
+set PATH $TO_FISH_PATH $PATH
 
 set fish_plugins theme peco
 
